@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img  id="main" onclick="myfunction()" src="light_buld_open.png" width="200px" height="200px">
+</body>
+<script type="text/javascript">
+function myfunction(){
+    if(document.getElementById('main').src.endsWith("light_buld_open.png")){
+    document.getElementById('main').src="light_buld_close.png";
+    }
+  else{
+    document.getElementById('main').src="light_buld_open.png";
+  }
+}
+</script>
+</html>
